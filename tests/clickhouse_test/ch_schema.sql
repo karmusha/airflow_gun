@@ -1,0 +1,1 @@
+drop table cds_blps.pgbench_accounts on cluster gpn

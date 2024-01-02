@@ -1,0 +1,23 @@
+[build-system]
+requires = ['setuptools>=61.0.0', 'wheel']
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "apache-airflow-providers-gun"
+version = "0.1.0"
+authors = [
+    {name = "Solomatova Margarita", email = "karmusha@gmail.com"},
+]
+description = "Provider package for Apache Airflow"
+requires-python = ">=3.10"
+keywords = ["gun", "airflow"]
+license = {text = "mit"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "kerberos>=1.3.1",
+    "psycopg2>=2.9",
+    "clickhouse_driver>=0.2.6",
+]
