@@ -367,7 +367,7 @@ def pg_auth_airflow_conn(
     login    - user в psycopg2
     password - password в psycopg2
     port     - port  в psycopg2
-    extra    - сюда можно передать остальные аргументы подключения в виде json словаря. данный словарь объедениться с первичными аргументами
+    extra    - сюда можно передать остальные аргументы подключения в виде json словаря. данный словарь объединится с первичными аргументами
 
     Из указанных атрибутов будет сформирована dsn строка подключения, например:
     {'password': 'secret', 'user': 'postgres', 'dbname': 'test'}
@@ -379,7 +379,7 @@ def pg_auth_airflow_conn(
     Все dsn атрибуты можно посмотреть тут: https://www.psycopg.org/docs/extensions.html#psycopg2.extensions.ConnectionInfo
 
     pg_auth_conn_id и pg_auth_dsn можно использовать совместно
-    если указаны оба варианта, атрибуты сливаются в единный словарь
+    если указаны оба варианта, атрибуты сливаются в единый словарь
     поверх pg_auth_conn_id накладываются атрибуты pg_auth_dsn и переопределяют их
     """
 

@@ -7,7 +7,7 @@ from urllib.request import (
 
 class PreemptiveBasicAuthHandler(HTTPBasicAuthHandler):
     """
-    Basic авторизация с привентивным выставлением Authorization заголовка, не дожидаясь ошибки 401
+    Basic авторизация с превентивным выставлением Authorization заголовка, не дожидаясь ошибки 401
       При обычной basic авторизации сначала выполняется тестовый запрос
       Если возвращается ошибка 401, то формируется второй запрос с Authorization заголовком
     PreemptiveBasic формирует authorization заголовок заранее и посылает его в первом же запросе
